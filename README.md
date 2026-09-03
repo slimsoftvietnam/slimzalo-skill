@@ -21,14 +21,14 @@ Agent tự resolve SĐT → tài khoản, tên nhóm → group id, rồi gọi S
 ### Cursor (project hoặc global)
 
 ```powershell
-# Trong project
+# Trong project SlimZalo / zalomultiuser
 git clone https://github.com/slimsoftvietnam/slimzalo-skill.git .cursor/skills/slimzalo-agent
 
 # Hoặc global (mọi project)
 git clone https://github.com/slimsoftvietnam/slimzalo-skill.git $env:USERPROFILE\.cursor\skills\slimzalo-agent
 ```
 
-**Cursor rule (tuỳ chọn)** — copy `cursor-rule.example.mdc` vào `.cursor/rules/slimzalo-agent.mdc` của project.
+Rule Cursor (tuỳ chọn): copy nội dung từ `.cursor/rules/slimzalo-agent.mdc` trong repo zalomultiuser.
 
 ### Codex / Claude Code
 
