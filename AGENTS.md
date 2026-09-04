@@ -17,6 +17,7 @@ Gửi tin từ tài khoản Zalo 0362466889 đến nhóm Tài liệu doanh nghi�
 |------------|--------|
 | Gửi nhóm | `Zalo 0362466889 → nhóm Team Dev: "Deploy 14h"` |
 | Gửi cá nhân | `Gửi từ Zalo 0362466889 cho SĐT 0987654321: "Đã nhận đơn"` |
+| Gửi link (thumbnail) | `Zalo 0362466889 → nhóm Team Dev: "https://ai.slim.vn/blog/claude-fable-5-1-giam-chi-phi-ai"` |
 | Đọc tin mới | `Đọc 20 tin mới SlimZalo, tóm tắt` |
 | Kiểm tra | `Check SlimZalo và liệt kê nhóm của 0362466889` |
 

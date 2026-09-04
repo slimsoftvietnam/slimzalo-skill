@@ -77,6 +77,8 @@ Match if suffix aligns (last 9–10 digits) against `phoneNumber` from `/account
 
 Per-account API key (`zmu_…`): omit `account_id` if key is bound to one Zalo account.
 
+**Link thumbnail:** nếu `msg` chứa URL `http(s)://`, SlimZalo gửi **link card** (ảnh preview như Zalo PC). Để URL trong `msg` — **không** đưa URL bài viết vào `attachments` (field đó chỉ gửi file ảnh). Parse lỗi → vẫn gửi tin chữ.
+
 ---
 
 ## Environment

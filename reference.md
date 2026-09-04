@@ -16,7 +16,7 @@ Local: `http://localhost/zalomultiuser/php/gateway/api/v1/index.php`
 | GET/POST | `/groups` | `groups:read` | Group list (`account_id`, optional `limit`) |
 | GET | `/threads` | `messages:read` | Conversations from inbox |
 | GET | `/messages` | `messages:read` | Inbox messages or `source=group_history` |
-| POST | `/messages` | `messages:send` | Send text (and optional `attachments` URLs) |
+| POST | `/messages` | `messages:send` | Send text; `http(s)` URL in `msg` → Zalo link card (thumbnail). Optional `attachments` = image files |
 | POST | `/users/find` | `users:find` | Find UID by phone |
 | GET/POST | `/users/info` | `users:read` | User profile |
 | POST | `/friends/request` | `friends:request` | Send friend request |
@@ -36,7 +36,7 @@ Local: `http://localhost/zalomultiuser/php/gateway/api/v1/index.php`
 | `account_id` | Yes* | *Optional if API key is bound to one account |
 | `thread_id` | Yes | User UID or group ID |
 | `type` | No | `user` (default) or `group` |
-| `msg` | Yes* | *Or `attachments` array of image URLs |
+| `msg` | Yes* | *Or `attachments` array of image URLs. If `msg` contains an `http(s)://` URL, SlimZalo sends a Zalo link card (thumbnail) via parseLink+sendLink; falls back to plain text if parse fails |
 | `attachments` | No | `["https://..."]` |
 | `request_id` | No | Idempotency hint; auto-generated if omitted |
 
